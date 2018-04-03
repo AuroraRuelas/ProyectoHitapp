@@ -9,7 +9,19 @@
 import UIKit
 
 class VCFunct: UIViewController {
-
+    
+    @IBOutlet var txtPasswordRegistro:UITextField?
+    @IBOutlet var txtPasswordRegistroRep:UITextField?
+     @IBOutlet var btnOk:UIButton?
+     @IBOutlet var btnCancelar:UIButton?
+    @IBAction func clickOKRegistro(){
+        print(" Usuario Pulso OK ")
+        if txtPasswordRegistro?.text==txtPasswordRegistroRep?.text {
+            print("IF")
+            self.performSegue(withIdentifier: "trRegistroCorr", sender: self)
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

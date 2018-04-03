@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44163F5C2073CBF000EBC6ED /* VCFunct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44163F5B2073CBF000EBC6ED /* VCFunct.swift */; };
 		441C6ED8207384A3002D78D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C6ED7207384A3002D78D6 /* AppDelegate.swift */; };
 		441C6EDA207384A3002D78D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C6ED9207384A3002D78D6 /* ViewController.swift */; };
 		441C6EDD207384A3002D78D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441C6EDB207384A3002D78D6 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44163F5B2073CBF000EBC6ED /* VCFunct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFunct.swift; sourceTree = "<group>"; };
 		441C6ED4207384A3002D78D6 /* Hitapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hitapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		441C6ED7207384A3002D78D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		441C6ED9207384A3002D78D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				441C6ED7207384A3002D78D6 /* AppDelegate.swift */,
 				441C6ED9207384A3002D78D6 /* ViewController.swift */,
+				44163F5B2073CBF000EBC6ED /* VCFunct.swift */,
 				441C6EDB207384A3002D78D6 /* Main.storyboard */,
 				441C6EDE207384A3002D78D6 /* Assets.xcassets */,
 				441C6EE0207384A3002D78D6 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44163F5C2073CBF000EBC6ED /* VCFunct.swift in Sources */,
 				441C6EDA207384A3002D78D6 /* ViewController.swift in Sources */,
 				441C6ED8207384A3002D78D6 /* AppDelegate.swift in Sources */,
 			);

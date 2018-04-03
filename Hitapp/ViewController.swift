@@ -11,20 +11,21 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var txtUser:UITextField?
     
-    @IBOutlet var txtPassword:UITextField?
-    
+    @IBOutlet var txtPasswordLogin:UITextField?
+   
     @IBOutlet var btnLogin:UIButton?
-    
+     @IBOutlet var btnRegistrar:UIButton?
  
     var UserName:String = "Aurora"
     @IBAction func clickLogin(){
-        print(" Usuario Pulso Login "+(txtPassword?.text)!)
-        if txtUser?.text=="Aurora" && txtPassword?.text=="1234"{
-            print("IFFFFFFFFF")
+        print(" Usuario Pulso Login "+(txtPasswordLogin?.text)!)
+        if txtUser?.text=="Aurora" && txtPasswordLogin?.text=="1234"{
+            print("IF")
             self.performSegue(withIdentifier: "trLoginCorr", sender: self)
            
         }
     }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
