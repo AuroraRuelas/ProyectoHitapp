@@ -18,8 +18,13 @@ class ViewController: UIViewController {
  
     var UserName:String = "Aurora"
     @IBAction func clickLogin(){
-        print("Usiario Pulso Login")
-        
+        print("Usuario Pulso Login")
+        if txtUser?.text=="Aurora" {
+            self.performSegue(withIdentifier: "trLoginCorr", sender: self)
+            if txtPassword?.text=="1234"{
+                self.performSegue(withIdentifier: "trLoginCorr", sender: self)
+            }
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
