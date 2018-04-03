@@ -14,6 +14,7 @@
 		441C6EE2207384A3002D78D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441C6EE0207384A3002D78D6 /* LaunchScreen.storyboard */; };
 		441C6EED207384A4002D78D6 /* HitappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C6EEC207384A4002D78D6 /* HitappTests.swift */; };
 		441C6EF8207384A4002D78D6 /* HitappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C6EF7207384A4002D78D6 /* HitappUITests.swift */; };
+		441C6F0720738C1F002D78D6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441C6F0620738C1F002D78D6 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		441C6EF3207384A4002D78D6 /* HitappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		441C6EF7207384A4002D78D6 /* HitappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitappUITests.swift; sourceTree = "<group>"; };
 		441C6EF9207384A4002D78D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441C6F0620738C1F002D78D6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441C6F0720738C1F002D78D6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				441C6EEB207384A4002D78D6 /* HitappTests */,
 				441C6EF6207384A4002D78D6 /* HitappUITests */,
 				441C6ED5207384A3002D78D6 /* Products */,
+				441C6F0520738C1F002D78D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				441C6EF9207384A4002D78D6 /* Info.plist */,
 			);
 			path = HitappUITests;
+			sourceTree = "<group>";
+		};
+		441C6F0520738C1F002D78D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				441C6F0620738C1F002D78D6 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +206,11 @@
 					441C6ED3207384A3002D78D6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					441C6EE7207384A4002D78D6 = {
 						CreatedOnToolsVersion = 9.2;
