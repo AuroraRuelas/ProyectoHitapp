@@ -18,12 +18,11 @@ class ViewController: UIViewController {
  
     var UserName:String = "Aurora"
     @IBAction func clickLogin(){
-        print("Usuario Pulso Login")
-        if txtUser?.text=="Aurora" {
+        print(" Usuario Pulso Login "+(txtPassword?.text)!)
+        if txtUser?.text=="Aurora" && txtPassword?.text=="1234"{
+            print("IFFFFFFFFF")
             self.performSegue(withIdentifier: "trLoginCorr", sender: self)
-            if txtPassword?.text=="1234"{
-                self.performSegue(withIdentifier: "trLoginCorr", sender: self)
-            }
+           
         }
     }
     override func viewDidLoad() {
