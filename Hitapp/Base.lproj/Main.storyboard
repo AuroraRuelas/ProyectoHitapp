@@ -45,6 +45,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4S-WZ-KZf"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81N-OY-1Yb">
                                 <rect key="frame" x="149" y="193" width="97" height="30"/>
@@ -61,20 +64,28 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vy-Kx-aKZ">
-                                <rect key="frame" x="149" y="356" width="62" height="30"/>
+                                <rect key="frame" x="157" y="356" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Registrar">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="UHT-bf-LOa" kind="show" id="dDZ-VN-Fkd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.74349350308578677" green="0.11404663405463429" blue="0.41141510241399964" alpha="0.8846586044520548" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txtPassword" destination="9pb-jb-MnK" id="xKo-rc-whi"/>
+                        <outlet property="txtUser" destination="81N-OY-1Yb" id="YbX-m4-Xmk"/>
+                        <segue destination="ZTl-EG-PHz" kind="show" identifier="trLoginCorr" id="AfY-e1-ycG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-343.19999999999999" y="-497.00149925037488"/>
+            <point key="canvasLocation" x="-962" y="-2388"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ul0-Tx-XhG">
@@ -89,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sn7-Vj-jTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="-497"/>
+            <point key="canvasLocation" x="-73" y="-2389"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="xtI-oG-2TN">
@@ -110,7 +121,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jhc-Yf-QRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="426.39999999999998" y="44.527736131934034"/>
+            <point key="canvasLocation" x="-95" y="-1592"/>
+        </scene>
+        <!--RegisterView-->
+        <scene sceneID="b26-q6-Keh">
+            <objects>
+                <viewController id="UHT-bf-LOa" userLabel="RegisterView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oap-K6-7mZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rg-Ke-hbj">
+                                <rect key="frame" x="155" y="20" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE8-oa-nrH">
+                                <rect key="frame" x="42" y="582" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OK"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfs-US-cmh">
+                                <rect key="frame" x="287" y="582" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Canelar"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dVv-gO-S9I"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tpi-wX-m6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962.39999999999998" y="-1618.7406296851575"/>
         </scene>
     </scenes>
 </document>
