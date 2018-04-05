@@ -20,6 +20,8 @@ class VCFunct: UIViewController {
             print("IF")
             self.performSegue(withIdentifier: "trRegistroCorr", sender: self)
             
+            
+            
         }
     }
     override func viewDidLoad() {
